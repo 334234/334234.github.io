@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+#lockCheckbox {
+  display: none;
+}
+
+#lockCheckbox:checked ~ .lockLabel {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  border-style: outset; 
+}
+
+#lockCheckbox:checked ~ form input[type="text"] {
+  pointer-events: none;
+}
+
+h2 {
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+ul {
+  background: #b8b7ed;
+  padding: 20px;
+}
+
+ul li {
+  background: #e6e6f5;
+  color: darkblue;
+  margin: 5px;
+}
+
+.lockLabel {
+  padding: 10px 20px;
+}
+
+div.customDiv {
+  width: 300px;
+  height: 100px;
+  background-color: pink;
+  border: 1px solid black;
+  transform: skew(20deg, 10deg);
+}
+div.secondDiv {
+  width: 300px;
+  height: 100px;
+  background-color: #c6eff7;
+  border: 1px solid black;
+  transform: skew(20deg, 10deg);
+}
+div.thirdDiv {
+  width: 300px;
+  height: 100px;
+  background-color: #d2fae9;
+  border: 1px solid black; 
+  transform: rotate(20deg);
+}
+
+
+
