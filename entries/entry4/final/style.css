@@ -1,3 +1,174 @@
-h1 {
-	font-family: arial;
+/* Common styles for headings */
+h2, h3, h4, h5, h6, h7 {
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px red, 2px 2px 1px red;
 }
+
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Unique styles for each heading */
+h2 {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 4rem;
+  position: relative;
+}
+
+h3 {
+  font-family: 'Sofia', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  width: auto;
+  background: lightpink;
+  border: 2px solid seagreen;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+. writing {
+  font-style: italic;
+  background-color: #99CDFF;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+. writing:hover:after {
+  content: url(../imgs/chia.png);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h4, #para1 {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: lightpink;
+  border: 2px solid darkred;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+h5 {
+  font-family: 'Audiowide', sans-serif;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  font-size: 1.5rem;
+  padding: 5px;
+  background: lightblue;
+}
+
+h6 {
+  font-family: 'Sofia', sans-serif;
+  font-size: 1rem;
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scrollText 10s linear infinite;
+}
+
+h7 {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.vertical-label {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+body {
+  background: rgb(246, 223, 245);
+  background: linear-gradient(90deg, rgba(246, 223, 245, 1) 0%, rgba(203, 118, 192, 1) 50%, rgba(238, 230, 236, 1) 100%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.centered-image img {
+  width: 200px;
+  height: auto;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.blur-on-hover {
+  transition: filter 0.3s ease-in-out;
+}
+
+.blur-on-hover:hover {
+  filter: blur(5px); /* 调整模糊程度，单位为像素 */
+}
+
+#K1038373980 .page-layout {
+  max-width: 100%;
+}
+
+#K1038373980 .page-content {
+  padding: 2.5rem;
+  text-align: center; 
+}
+
+:root {
+  --main-color: #ecf0f1;
+  --point-color: #555;
+  --size: 5px;
+}
+
+.loader {
+  background-color: var(--main-color);
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  bottom: 0; 
+ 
+
+
