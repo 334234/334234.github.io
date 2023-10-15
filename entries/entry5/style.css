@@ -1,0 +1,180 @@
+
+
+
+.long-way {
+  font-style: italic;
+  transition: all 10s ease-in-out;
+}
+
+.long-way:hover {
+  cursor: pointer;
+  font-size: 2em;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay img {
+    width: 50%; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+      z-index: 1000;
+}
+
+.text-overlay {
+   position: absolute;
+   top: 30%;
+   left: 30%;
+   transform: translate(-50%, -50%);
+   background-color: whitesmoke;
+   padding: 5px;
+   color: whitesmoke;
+   font-size: 18px;
+   z-index: 1000;
+   font-family: "nitti-typewriter-cameo", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-paragraph, .right-paragraph {
+  width: 30%;
+  margin: 0;
+}
+
+.center-paragraph {
+  text-align: center;
+}
+
+.hover-word {
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hover-image {
+  display: none;
+}
+
+.hover-word:hover + .hover-image {
+  display: block;
+}
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url(file:///Users/yesiheng/Desktop/334234.github.io/entries/entry5/WechatIMG973.jpg);
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    border-color: black;
+    }
+
+    .title {
+      text-align: center;
+      
+      font-size: 50px;
+      margin-left: 120px;
+      color: Babyblue;
+    }
+
+    
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80vh;
+    }
+
+    .left-paragraph,
+    .right-paragraph {
+      width: 30%;
+      color: #fff; /* Adjust text color to match your background */
+    }
+
+    .center-paragraph {
+      text-align: center;
+      color: #fff; /* Adjust text color to match your background */
+    }
+
+    .hover-word {
+      font-size: 36px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hover-image {
+      display: none;
+    }
+
+    .hover-word:hover+.hover-image {
+      display: block;
+    }
+    
+    .background img {
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+      position: relative;
+      margin-top: 2px;
+      margin-left: 350px;
+      margin-bottom: 1px;
+    }
+    
+    .text-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+
+    .item {
+  margin: 10px 10px;
+  width: 150px;
+  height: auto;
+  writing-mode: vertical-rl;
+}
+
+.item1 {
+  background-color: lightpink;
+}
+
+.item2 {
+  background-color:  lightpink;
+}
+
+.item3 {
+  background-color:  lightpink;
+}
+.paragraph {
+  display: flex;
+  padding:10px;
+  background-color: black;
+  opacity: 0.6;
+  min-height: 300px;
+  font-family: "ocr-a-std", monospace;
+  color:  #042135;
+  font-size:  46px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.long-way {
+  font-style: italic;
+  transition: all 10s ease-in-out;
+}
+
+.long-way:hover {
+  cursor: pointer;
+  font-size: 2em;
+}
+
