@@ -1,0 +1,209 @@
+* {box-sizing:  border-box;}
+
+.header{
+  text-align: center;
+  padding: 20px 0;
+}
+.title{
+  font-family: 'PT Mono', monospace;
+  font-size: 48px;
+  color: #fff;
+  transition: font-family 0.3s ease-in-out; 
+}
+
+.title:hover {
+  font-family: Arial, sans-serif; 
+}
+
+body {
+  margin: 30px;
+  padding: 0;
+  background: rgb(238,174,202);
+ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;  
+  column-gap: 20px; /* Gap between columns */
+  row-gap: 20px; /* Gap between rows */
+  font-family: 'PT Mono', monospace;
+  color: #042135;
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  margin: 0px;
+  width: 100%;
+  height: 200px;
+}
+
+
+
+.item1 {
+  background-color: #ff62f4;
+  font-size: 18px;
+  color: #fff; /* 文本颜色 */
+  text-align: center;
+  margin: 10px 0;
+  background-image: url('file:///Users/yesiheng/Desktop/334234.github.io/entries/entry6/final/d15eb3b508105259a168faa123985f00.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+    filter: grayscale(100%); 
+  transition: filter 0.3s ease-in-out; 
+}
+.item1:hover{
+  filter: grayscale(0%); 
+}
+
+ 
+
+.item2 {
+  background-color: black;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+  position: relative;
+  
+}
+.rotate-text {
+  transition: transform 0.3s ease-in-out;
+}
+
+.item2:hover:rotate-text {
+  transform: rotate(360deg);
+}
+
+.item3 {
+  background-color:  #af6801;
+  font-size: 18px;
+  color: #fff; 
+  text-align: center;
+  margin: 10px 0;
+  background-image: url('file:///Users/yesiheng/Desktop/334234.github.io/entries/entry6/final/skin2.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  filter: grayscale(100%); 
+  transition: filter 0.3s ease-in-out; 
+}
+
+
+.item3:hover{
+  filter: grayscale(0%); 
+}
+
+.item4 {
+  background-color:  black;
+  font-size: 18px;
+  color: #fff; /* 文本颜色 */
+  text-align: center;
+  margin: 10px 0;
+
+}
+.item4:hover{
+  filter: grayscale(0%); 
+} 
+
+.item5 {
+  background-color:  #fff93f;
+  font-size: 18px;
+  color: #fff; /* 文本颜色 */
+  text-align: center;
+  margin: 10px 0;
+  background-image: url('file:///Users/yesiheng/Desktop/334234.github.io/entries/entry6/final/skin3.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  filter: grayscale(100%); 
+  transition: filter 0.3s ease-in-out; 
+}
+.item5:hover{
+  filter: grayscale(0%); 
+}
+
+.item6 {
+  background-color:  black;
+  font-size: 18px;
+  color: #fff; /* 文本颜色 */
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+
+
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 4fr 1fr; 
+    column-gap: 20px; /* Gap between columns */
+    row-gap: 20px; /* Gap between rows */
+}
+  
+
+}
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+    .container {
+    grid-template-columns: 2fr 1fr; 
+    column-gap: 20px; /* Gap between columns */
+    row-gap: 20px; /* Gap between rows */
+}
+  
+}
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+
+  .container {
+    grid-template-columns: repeat(6, 1fr); /* Creates four columns, each taking up an equal fraction of the available space */
+    column-gap: 20px; /* Gap between columns */
+    row-gap: 20px; /* Gap between rows */
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 居中对齐 */
+  margin-top: 50px; /* 根据需要调整距离顶部的距离 */
+}
+
+.vertical-item {
+  width: 300px; 
+  height: 100px; 
+  border-radius: 50%;
+  background-color: #ff62f4; /* 初始背景颜色 */
+  margin-bottom: 10px; /* 调整垂直间距 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.vertical-item span {
+  z-index: 1; 
+}
+
+.vertical-item:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大 */
+  background-image: url('file:///Users/yesiheng/Desktop/334234.github.io/entries/entry6/final/skin.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+}  
+
+    
+
+  
+}
