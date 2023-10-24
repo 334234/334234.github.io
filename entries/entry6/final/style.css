@@ -23,8 +23,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;  
-  column-gap: 20px; /* Gap between columns */
-  row-gap: 20px; /* Gap between rows */
+  column-gap: 20px; 
+  row-gap: 20px; 
   font-family: 'PT Mono', monospace;
   color: #042135;
   font-size: 36px;
@@ -200,10 +200,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: url('https://s2.loli.net/2023/10/18/DeoQMazvgFWs2yU.png'), auto;
 }
-}  
+}
+ 
 
-    
+   
 
   
 }
