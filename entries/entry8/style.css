@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    color: whitesmoke;
+}
+section {
+  position: relative;
+}
+
+.rotate-text {
+font-family: 'Dancing Script', cursive;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+  color: whitesmoke;
+}
+
+.rotate-text:hover {
+  transform: rotate(-45deg);
+}
+.title {
+    border-bottom: 1px solid whitesmoke;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.title:hover {
+    background: lightpink;
+}
+
+.content {
+    padding: 20px;
+    display: none;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#week1 .content img {
+  width: 100%; /* 设置图片宽度为父容器的100% */
+  height: auto; /* 让高度自适应，以保持图片比例 */
+  color: whitesmoke;
+}
+#week1 {
+  background-image: url('https://s2.loli.net/2023/11/08/ZmgM5tRy2kVUTCP.png'); /* 替换为你的花纹图片路径 */
+  background-repeat: repeat; /* 设置花纹重复显示 */
+  background-size: cover;
+  color: whitesmoke; /* 设置文字颜色为白色，以确保在花纹上可读 */
+}
+
+#week1 .title {
+  cursor: pointer; 
+  /* 将光标样式设置为手型，以表示标题可点击 */
+}
+.week {
+    margin-top: 10px;
+  border: 1px solid whitesmoke; /* 添加或调整边框样式 */
+}
+
+.week .title {
+  cursor: pointer; /* 添加手型光标以指示可以点击 */
+}
+
+.week .title:hover {
+  text-decoration: underline; /* 鼠标悬停时添加下划线效果，可以根据需要调整 */
+}
+.image-container img {
+  opacity: 1;
+}
+.week.no-border {
+  border: none; /* 删除边框样式 */
+}
+
+.image-container {
+  position: relative;
+  top: 100%; /* 位于 Week 3 之下 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%);
+}
+}
+
+.week-image {
+  width: 500px; /* 调整图片宽度 */
+  height: auto; /* 让高度自适应，以保持图片比例 */
+  cursor: pointer; /* 添加手型光标以表示可以点击 */
+  position: absolute; /* 使用绝对定位 */
+  transform: translate(-50%, -50%); /* 将图片的中心定位到父容器的中心 */
+  transition: opacity 0.8s ease; /* 添加淡入淡出的过渡效果 */
+}
+
+.image1 {
+  top: 10%;
+  left: 50%;
+}
+
+.image2 {
+  top: 50%;
+  left: 40%; /* 调整第二张图片的水平位置 */
+}
+
+.image3 {
+  top: 50%;
+  left: 60%; /* 调整第三张图片的水平位置 */
+}
+
+.image-container:hover .week-image {
+  opacity: 0; /* 鼠标悬停时淡出所有图片 */
+}
+
+.image-container:hover .week-image:hover {
+  opacity: 1; /* 鼠标悬停在单个图片上时淡入该图片 */
+}
+
+
+  #falling-icon {
+      position: fixed;
+      top: -50px; /* 初始位置在页面上方之外 */
+      left: 50%;
+      transform: translateX(-50%);
+      transition: top 2s ease-out; /* 使用过渡效果 */
+      font-size: 20px;
+    }
+
+
+
+
+
+
