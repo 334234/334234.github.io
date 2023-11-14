@@ -1,40 +1,86 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 8px;
-    padding: 0;
+
+
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+  background-color: black;
+}
+#circle{
+  stroke-dasharray: 63;
+  stroke-dashoffset:0 ;
+  transform-origin: center center;
+  animation:rotate 1s linear infinite,stroke 3.9s linear infinite;
+
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes stroke{
+  0%{
+    stroke-dashoffset:0;
+  }
+  50%{
+    stroke-dashoffset: 63;
+  }
+  100%{
+    stroke-dashoffset: 126;
+  }
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin:10px 10px 0 -500px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
 }
-
-.box {
+.image2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 250px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
-    transition: transform 0.2s;
-    background-color: #fff;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    margin:-200px 10px 0 -500px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
 }
 
-.box:hover {
-    transform: scale(1.05);
+.image3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin:-400px 1000px 0px 0px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
 }
+.image4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin:150px 500px 100px 0px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-.box img {
-    max-width: 100%;
-    height: auto;
-}
-
-.box a {
-    text-decoration: none;
-}
-
-p {
-    margin: 0;
-}
