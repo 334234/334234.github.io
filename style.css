@@ -17,10 +17,10 @@ h1{
 }
  @keyframes glow {
             0% {
-                background-size: 200% 200%; /* 渐变背景初始大小为0% */
+                background-size: 200% 200%; 
             }
             100% {
-                background-size: 300% 300%; /* 渐变背景变为100% */
+                background-size: 300% 300%; 
             }
         }
 .container {
