@@ -1,0 +1,204 @@
+body {
+    font-family: 'Segoe Script', cursive;
+    margin: 0;
+    padding: 0;
+    
+    background: url('https://s2.loli.net/2023/12/06/F6CeqxbBydGHsmw.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+#getStartedContainer {
+            position: fixed;
+            bottom:200px; 
+            right: 400px;
+
+          
+        }
+          #getStartedLink {
+            text-decoration: none; /* 移除链接下划线 */
+            display: inline-block;
+        }
+
+ 
+        #getStartedIcon {
+            background-color: orange;
+            width: 60px;
+            height: 100px;
+            border-radius: 20px; 
+            display: flex;
+            justify-content: space-around;
+      
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+         #getStartedIcon:hover {
+            width: 120px; /* 悬停时改变宽度，使其变成长方形 */
+        }
+
+ #centeredText {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        } 
+
+#headerText {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #000;
+}
+
+.shiningText {
+    position: relative;
+    display: inline-block;
+    font-size: 80px;
+    font-weight: bold; 
+    background: linear-gradient(45deg, #ff8c00, #ff4500); /* 使用橘色渐变背景 */
+    -webkit-background-clip: text; /* 设置文字裁剪 */
+    color: transparent;
+}
+
+.shiningText::before {
+    content: "Exploring the Face";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255,255,255,0.8), transparent 80%);
+    opacity: 0;
+    animation: shiningAnimation 2s infinite;
+}
+
+@keyframes shiningAnimation {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+#floatingImageContainer,
+#bottomLeftImageContainer {
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
+}
+
+#floatingImageContainer img {
+    max-width: 100%;
+    height: auto;
+    width: 100px; /* 设置宽度为100px */
+    height: 130px; /* 设置高度为80px */
+}
+
+#floatingImageContainer {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bottomLeftImageContainer img {
+    max-width: 100%;
+    height: auto;
+    width: 150px; /* 设置宽度为150px */
+    height: 120px; /* 设置高度为120px */
+}
+
+#bottomLeftImageContainer {
+    bottom: 80px!important;
+    left: 200px!important; /* 调整左边距 */
+}
+#bottomRightImageContainer {
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
+}
+
+#bottomRightImageContainer img {
+    max-width: 100%;
+    height: 120px;
+    width: 130px; /* 设置图片的宽度 */
+}
+
+#bottomRightImageContainer {
+    bottom: 100px;
+    right: 100px; /* 调整右边距 */
+}
+
+#topLeftImageContainer {
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 0.8s ease; /* 添加 top 属性的过渡效果 */
+}
+
+#topLeftImageContainer img {
+    max-width: 100%;
+    height: 160px;
+    width: 100px; /* 设置图片的宽度 */
+}
+
+#topLeftImageContainer {
+    top: -200px; /* 设置初始位置在页面之外的上方 */
+    left: 250px; /* 调整左边距 */
+}
+
+#topCenterImageContainer {
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 1s ease; /* 增加 top 属性的过渡时间为 1s */
+}
+
+#topCenterImageContainer img {
+    max-width: 100%;
+    height: 50px;
+    width: 200px; /* 设置图片的宽度 */
+}
+
+#topCenterImageContainer {
+    top: -100px; /* 设置初始位置在页面之外的上方 */
+}
+
+#topRightImageContainer {
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 1s ease, right 1s ease; /* 增加 top 和 right 属性的过渡时间为 1s */
+}
+
+#topRightImageContainer img {
+    max-width: 100%;
+    height: 200px;
+    width: 150px; /* 设置图片的宽度 */
+}
+
+#topRightImageContainer {
+    top: -150px; 
+    right: 100px!important; 
+}
+
+#floatingImageContainer:hover,
+#bottomLeftImageContainer:hover,
+#bottomRightImageContainer:hover,
+#topLeftImageContainer:hover,
+#topCenterImageContainer:hover,
+#topRightImageContainer:hover {
+    filter: blur(5px);
+    cursor: pointer;
+}
+
+
+
