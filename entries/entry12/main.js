@@ -50,11 +50,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
 
      floatingImageContainer.addEventListener("click", function () {
-        var relativeLink = "entries/entry1/final//nose%202.html";
+        var relativeLink = "entries/entry1/final/nose%202.html";
         var absoluteLink = new URL(relativeLink, window.location.href).href;
         window.open(absoluteLink, "_blank");
     });
 });
+ bottomLeftImageContainer.addEventListener("click", function () {
+        var relativeLink = "https://334234.github.io/entries/entry2/final/index.html";
+        var absoluteLink = new URL(relativeLink, window.location.href).href;
+        window.open(absoluteLink, "_blank");
+    });
 
 
 
