@@ -177,4 +177,37 @@ body {
   cursor: pointer;
   font-size: 2em;
 }
+#bottomLeftImageLink {
+  position: fixed;
+  bottom: 20px; /* 调整底部距离 */
+  left: 20px; /* 调整左边距 */
+}
+
+#bottomLeftImageLink img {
+  max-width: 30px;
+  height: 30px;
+  cursor: pointer; /* 添加手型指针，表示可点击 */
+}
+#centerImageContainer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+}
+
+#centerImageLink img {
+  max-width: 30px; /* 图片最大宽度为父元素宽度的100% */
+  height: 30px; /* 保持纵横比 */
+  cursor: pointer; /* 添加手型指针，表示可点击 */
+}
+#bottomRightImageContainer {
+  position: fixed;
+  bottom: 20px; /* 调整底部距离，根据需要调整 */
+  right: 20px; /* 调整右边距，根据需要调整 */
+}
+
+#bottomRightImageLink img {
+  max-width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
 
